@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="FoodTracker"> 
+    <meta name="description" content="關於FoodTracker,韓國美食愛好與分享的平台"> 
+    <meta name="generator" content="Visual Studio Code v.1.83.1">
+    <meta name="keywords" content="韓國美食,探索,文化與故事,泡菜,烤肉,炸雞,食材和烹飪,餐廳評論">  
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <!-- 網站標籤 -->
+    <title>關於FoodTracker</title>
+    <!-- BootstrapCSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
+    <!-- google追蹤分析 -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D91JKTZB1P"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-D91JKTZB1P');
+      </script>
+  </head>
+  <!-- 網頁本文 -->
+  <body>
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <img src="logo.png" alt="FoodTracker logo" style="width: 40px;"> 
+          <a class="navbar-brand" href="#">FoodTracker</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">首頁</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="about.html">關於</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="recipe.html">食譜教學</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="recommend.html">餐廳推薦</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">新聞和活動</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://toolkit.url.com.tw/bbs/index.php?email=bbs@trial-153950.url.tw">留言區</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit">搜!</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/index/side-dish_1920-ok.webp" class="d-block w-100" alt="韓國泡菜" title="韓國泡菜" aria-label="韓國泡菜">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/koreanfood_1920-ok.webp" class="d-block w-100" alt="韓式餐桌" title="韓國泡菜" aria-label="韓國泡菜">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/market_1920-ok.webp" class="d-block w-100" alt="韓國傳統市場" title="韓國傳統市場" aria-label="韓國傳統市場">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+              <div class="card mt-5">
+                <img src="images/about/serch_1280.webp" class="card-img-top" alt="美食探索" title="美食探索" aria-label="美食探索">
+                <div class="card-body">
+                  <h2 class=" ">美食探索</h2>
+                  <p class="card-text">我熱愛品嘗各種韓國美食，從傳統的泡菜、烤肉、炸雞到當代的炒年糕、部隊鍋等。希望透過分享我的美食探索之旅，向各位介紹不同種類的韓國料理，並推薦值得一試的餐廳和小吃攤位。</p>
+                  <p class="card-text">我的部落格旨在成為一個韓國美食的愛好者社群，一個可以探索、學習和分享的平台。我希望激發人們對韓國美食的熱情，幫助他們探索這個美味的世界，並將韓國的美食文化帶入他們的生活中。</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-6">
+              <div class="card mt-5">
+                <img src="images/about/cook_1280.webp" class="card-img-top" alt="食材和烹飪" title="食材和烹飪" aria-label="食材和烹飪">
+                <div class="card-body">
+                  <h2 class="  ">食材和烹飪</h2>
+                  <p class="card-text">分享有關韓國食材、烹飪技巧和食譜的信息，讓各位了解如何在家中製作美味的韓國菜餚。這包括如何選擇和使用特定的調味料、香料和材料，以及烹飪過程中的技巧。</p>
+                  <p class="card-text"></p>
+                </div>
+              </div>
+            </div>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-6">
+            <div class="card mt-5">
+              <img src="images/about/comment_1280.webp" class="card-img-top" alt="餐廳評論" title="餐廳評論" aria-label="餐廳評論">
+              <div class="card-body">
+                <h2 class="    ">餐廳評論</h2>
+                <p class="card-text">我會定期以客觀、專業和具體的方式分享我在不同餐廳和小吃攤位的用餐體驗，包括餐廳的環境、裝潢風格、用餐氛圍、及服務態度，還有食物品質，包含使用的食材質地、味道和新鮮度。這可以幫助各位找到值得一去的餐廳，並了解菜單上的招牌菜，有助於讀者在選擇菜單時做出更有信心的決定。</p>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <div class="card mt-5">
+              <img src="images/about/story_1280.webp" class="card-img-top" alt="文化與故事" title="文化與故事" aria-label="文化與故事">
+              <div class="card-body">
+                <h2 class="    ">飲食文化與故事</h2>
+                <p class="card-text">韓國的飲食文化非常豐富，包括傳統的用餐禮儀、節慶食品和食品與社交的關聯。通過部落格分享這些飲食文化的方面，讓讀者更深入地了解韓國人的飲食習慣和價值觀。每道菜背後都有一個故事，包括食品的歷史、傳說和地方背景。這可以讓讀者更深入地了解韓國飲食的多樣性和意義。</p>
+                <p class="card-text"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+      </div>
+    <footer class="container">
+      <p class="float-end"><a href="#top">回到頁面頂端</a></p>
+      <p>FoodTracker &copy;2023 </p>
+    </footer>
+    </main>
+    <!-- BootstrapJS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

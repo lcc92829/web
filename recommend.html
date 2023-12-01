@@ -1,0 +1,141 @@
+<!-- 宣告html5文件 -->
+<!doctype html>
+<!-- 根元素 -->
+<html lang="zh-Hant-TW">
+  <head>
+    <!-- 中繼標籤 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="FoodTracker"> 
+    <meta name="description" content="推薦台灣各地的韓式餐廳"> 
+    <meta name="generator" content="Visual Studio Code v.1.83.1">
+    <meta name="keywords" content="韓國餐廳,韓國料理,餐廳推薦,韓式烤肉,首爾">  
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <!-- 網站標籤 -->
+    <title>餐廳推薦</title>
+    <!-- BootstrapCSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- google追蹤分析 -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D91JKTZB1P"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-D91JKTZB1P');
+    </script>
+  </head>
+  <!-- 網頁本文 -->
+  <body>
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <img src="logo.png" alt="FoodTracker logo" style="width: 40px;"> 
+          <a class="navbar-brand" href="#">FoodTracker</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">首頁</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">關於</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="recipe.html">食譜教學</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="recommend.html">餐廳推薦</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">新聞和活動</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://toolkit.url.com.tw/bbs/index.php?email=bbs@trial-153950.url.tw">留言區</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit">搜!</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/index/side-dish_1920-ok.webp" class="d-block w-100" alt="韓國泡菜" title="韓國泡菜" aria-label="韓國泡菜">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/koreanfood_1920-ok.webp" class="d-block w-100" alt="韓式餐桌" title="韓國泡菜" aria-label="韓國泡菜">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/market_1920-ok.webp" class="d-block w-100" alt="韓國傳統市場" title="韓國傳統市場" aria-label="韓國傳統市場">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container">
+        <div class="row">
+            <div class="col-md-7 order-md-1 mt-5">
+                <h2><i class="material-icons" style="font-size: 1.8rem; vertical-align:bottom;">restaurant</i>新村站著吃烤肉</h2>
+                <p class="textindent">源於1953年開幕至今的首爾名店，被列為「首爾未來遺產」之一。<br>店內特色為繞著石油桶站著吃烤肉，保留了自韓戰以來的獨特用餐方式，同時也打破了傳統燒烤店的座位限制，讓店內每個人都能夠自由移動暢談酣飲，呈現了特別的活絡氣氛。<br>身為韓國指標性烤肉名店的台灣代表，新村站著吃烤肉堅持保留韓國本店及當地慣有的用餐習慣，但同時也強調「以酒會友」，融合台韓兩地的飲酒烤肉文化，在店內以讓大家「喝得開心，吃得滿足」為目標，協助每一位客人能真正體驗到「沒有距離」的用餐氣氛，打造專屬於台灣人的韓式酒場。<p><i class="material-icons" style="font: size 1rem; color: rgb(221, 110,66) ;vertical-align:bottom;">place</i>台中2號店<br>地址：台中市西區英才路534號<br>營業時間：12:00～15:00、17:30～00:00 (週末下午不休息)<br>聯絡電話：04-2301-1659</p>
+                <p class="text-end"><a href="https://www.standupbbq.com/" class="btn btn-outline-success btn-sm" target="_blank" role="button">新村站著吃烤肉</a></p></p>
+            </div>
+            <div class="col-md-5 order-md-0 mt-5">
+                <img src="images/recommend/garlic-ribs-4643142_1280.webp" class="img-fluid mx-auto" alt="新村站著吃烤肉" title="新村站著吃烤肉" aria-label="新村站著吃烤肉">
+            </div>
+        </div>
+      <hr>
+        <div class="row">
+            <div class="col-md-7 order-md-1 mt-5">
+                <h2><i class="material-icons" style="font-size: 1.8rem; vertical-align:bottom;">restaurant</i>三元花園韓式餐廳</h2>
+                <p class="textindent">因著一段異國姻緣，開啟了韓國傳統美食與台灣的飄香因緣。<br>嫁到台港多年，因懷念傅统的家鄉味道，促成在首爾有40多年歷史的「三元花園韓式餐廳SAMWON GARDEN」跨海來台展店。「三元花園韓式餐廳」在台灣開了三家分店，皆秉持其嚴謹的料理風貌，嚴選產地的在地食材-堅持著呈現原汁原味韓式料理風味，延續其精緻、傳統、道地的韓國料理。每家分店裡的每一個角落都充滿來自韓國的濃濃情懷。特有之韓食料理皆由經驗豐富的韓籍主廚親自烹調，不但注重食材的鲜度，建品味、料理、刀工、餐具都非常講究；唯有這樣的用心，才能將充滿韓式靈魂的風味溢滿老饕的口中。<p><i class="material-icons" style="font: size 1rem; color: rgb(221, 110,66) ;vertical-align:bottom;">place</i>東海總店<br>營業時間：11:30 - 14:30與17:30-21:30<br>地址：台中市西屯區台灣大道四段1962號</p></p>
+                <p class="text-end"><a href="http://www.samwon.com.tw/index.php" class="btn btn-outline-success btn-sm" target="_blank" role="button">三元花園韓式餐廳</a></p>
+            </div>
+             <div class="col-md-5 order-md-0 mt-5">
+                <img src="images/recommend/chicken-soup.webp" class="img-fluid mx-auto" alt="三元花園韓式餐廳" title="三元花園韓式餐廳" aria-label="三元花園韓式餐廳">
+            </div>
+        </div>
+      <hr>
+         <div class="row">
+             <div class="col-md-7 order-md-1 mt-5">
+                <h2><i class="material-icons" style="font-size: 1.8rem; vertical-align:bottom;">restaurant</i>朴大哥的韓式炸雞</h2>
+                 <p class="textindent">「雞會是留給有準備的人，胃口是留給懂你的人！」<br>台灣人超愛炸雞，不管是台式、日式、美式、韓式、義式、沾醬、不沾醬、有粉、無粉，只要是炸的通通來一份，所以有報導指出，半年台灣國人就能吃掉，180座101大樓的炸雞；說到台灣第一韓式炸雞，不得不推薦『朴大哥的韓式炸雞』，在台中創立12年了，還是屹立不搖!招牌黑醬炸雞翅，採用18種天然原料製作，獨特的香氣及口味均勻地裹在酥脆的炸雞翅上，曾經創下連續一年內每天販售300份的紀錄，說明了炸雞口味獨特及容易令人上癮著迷。<p><i class="material-icons" style="font: size 1rem; color: rgb(221, 110,66) ; vertical-align:bottom;">place</i>逢甲總店<br>地址：407台中市西屯區逢甲路20巷28弄5號<br>電話： 0988 328 178</p></p>
+                 <p class="text-end"><a href="https://www.facebook.com/PUDAGE/?locale=zh_TW" class="btn btn-outline-success btn-sm" target="_blank" role="button">朴大哥韓式炸雞</a></p>
+             </div>
+             <div class="col-md-5 order-md-0 mt-5">
+                 <img src="images/recommend/image-7684006_1280.webp" class="img-fluid mx-auto" alt="朴大哥的韓式炸雞" title="朴大哥的韓式炸雞" aria-label="朴大哥的韓式炸雞">
+             </div>
+         </div>
+      <hr>
+      </div>
+    <footer class="container">
+      <p class="float-end"><a href="#top">回到頁面頂端</a></p>
+      <p>FoodTracker &copy;2023 </p>
+    </footer>
+    </main>
+    <!-- BootstrapJS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

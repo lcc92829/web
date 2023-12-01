@@ -1,0 +1,28 @@
+:root,
+[data-bs-theme=light] {
+--bs-dark-rgb: 221, 110, 66;}
+
+/* 使用google font 雲端字體 */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300&display=swap');
+
+/* 使用google font雲端字體 */
+body{font-family: '微軟正黑體', 'Noto Sans TC', sans-serif;}
+
+
+
+/* 指定根文字大小 單位是px */
+html {font-size: 20px;}
+
+/* 選取器是標籤，影響整體 */
+h2{font-size: 1.5rem;font-weight: 700;color:rgb(11, 93, 30);}
+h4{font-size: 1.5rem;font-weight: 700;color: rgb(11, 93, 30);}
+h3{font-size: 1.5rem;font-weight: 900;color:rgb(169, 203, 183);}
+
+/* 選取器是類別，影響個別，需要手動套用 */
+.h2-custom-green{font-size: 1.8rem;font-weight: 900;color: rgb(11, 93, 30);}
+
+p{font-size: 0.9rem}
+ol{font-size: 0.9rem;}
+
+/* 拿掉文字超連結下底線 */
+footer a{text-decoration: none;}

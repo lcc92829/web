@@ -1,0 +1,167 @@
+<!-- 宣告html5文件 -->
+<!doctype html>
+<!-- 根元素 -->
+<html lang="zh-Hant-TW">
+  <head>
+    <!-- 中繼標籤 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="FoodTracker"> 
+    <meta name="description" content="韓國美食介紹,韓國菜食譜教學分享,認識韓國"> 
+    <meta name="generator" content="Visual Studio Code v.1.83.1">
+    <meta name="keywords" content="FoodTracker,韓式,韓食,韓國美食,食譜,飲食文化,餐桌禮儀,傳統節日,宮廷料理,首爾,南韓,釜山,泡菜,辣炒雞排,泡菜炒飯,馬鈴薯排骨湯,炒雜菜,部隊鍋,韓式辣炒豬肉">  
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <!-- 網站標籤 -->
+    <title>FoodTracker-首頁</title>
+    <!-- BootstrapCSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
+    <!-- google追蹤分析 -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D91JKTZB1P"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-D91JKTZB1P');
+      </script>
+  </head>
+  <!-- 網頁本文 -->
+  <body>
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <img src="logo.png" alt="FoodTracker logo" style="width: 40px;"> 
+          <a class="navbar-brand" href="#">FoodTracker</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">首頁</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">關於</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="recipe.html">食譜教學</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="recommend.html">餐廳推薦</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">新聞和活動</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://toolkit.url.com.tw/bbs/index.php?email=bbs@trial-153950.url.tw">留言區</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit">搜!</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/index/side-dish_1920-ok.webp" class="d-block w-100" alt="韓國泡菜" title="韓國泡菜" aria-label="韓國泡菜">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/koreanfood_1920-ok.webp" class="d-block w-100" alt="韓式餐桌" title="韓國泡菜" aria-label="韓國泡菜">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/market_1920-ok.webp" class="d-block w-100" alt="韓國傳統市場" title="韓國傳統市場" aria-label="韓國傳統市場">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 order-md-0 mt-5">
+            <img src="images/index/koreaflag.webp" class="rounded-circle w-100" alt="南韓國旗" title="南韓國旗" aria-label="南韓國旗">
+            <div class="card-body">
+              <h2 class="h2-custom-green">韓國簡介</h2>
+              <p class="card-text">大韓民國，簡稱韓國、南韓，是位於東北亞朝鮮半島南半部的國家，首都位於首爾。韓國三面環海，西南瀕臨黃海，東南是朝鮮海峽，東邊是日本海。北面隔著三八線非軍事區與朝鮮民主主義人民共和國相鄰。<br>四季分明的冷暖帶氣候，因為南北呈現長條狀的地形，隨著越往南邊就呈現海洋性溫和氣候，夏季高溫多雨，冬天寒冷降雨量也較少。</p>
+              <p class="text-end"><a href="https://www.roc-taiwan.org/kr/index.html" target="_blank" class="btn btn-outline-success btn-sm" role="button">了解更多</a></p>
+            </div>
+          </div>
+          <div class="col-lg-4 order-md-1 mt-5">
+            <img src="images/index/night-view_1280-ok.webp" class="rounded-circle w-100" alt="南韓城市" title="南韓城市" aria-label="南韓城市">
+            <div class="card-body">
+              <h2 class="h2-custom-green">主要城市</h2>
+              <p class="card-text"><ul style="list-style-type:disc;font-size: 0.9rem;"><li>首爾：作為韓國的首都和最大城市，首爾是韓國的政治、經濟和文化中心。也可在首爾找到許多擁有悠久歷史的地標，如景福宮和仁寺洞的古董市場。</li><li>釜山：釜山位於韓國的東南部，是第二大城市。這個擁有美麗海灘、壯觀山脈和繁忙港口的城市被稱為"太平洋明珠"。著名景點包括海雲台海灘、釜山塔、以及全羅道村。釜山還以其海鮮料理和溫泉聞名。</li></ul></p>
+              <p class="text-end"><a href="https://big5chinese.visitkorea.or.kr/svc/main/index.do" target="_blank" class="btn btn-outline-success btn-sm" role="button">了解更多</a></p>
+            </div>
+          </div>
+          <div class="col-lg-4 order-md-2 mt-5">
+            <img src="images/index/new-year.webp" class="rounded-circle w-100" alt="傳統節日" title="傳統節日" aria-label="傳統節日">
+            <div class="card-body">
+              <h2 class="h2-custom-green">傳統節日</h2>
+              <p class="card-text"><ul style="list-style-type:disc;font-size: 0.9rem;">
+                <li>春節：春節是韓國最重要的傳統節日之一，通常在農曆新年時慶祝。人們會回到他們的故鄉與家人團聚，共進晚餐，並進行一系列的儀式，如鞠躬和贈送禮物。傳統的食物包括年糕湯和炸魚餅。</li><li>秋夕：秋夕是韓國的感恩節，慶祝農作物豐收。在這一天，家庭會準備豐盛的食物，包括韓國特色的千層泡菜，這是一種由糯米製成的特殊糕點。人們還會參與傳統的舞蹈和遊戲，如斗鷹。</li>
+              </ul></p>
+            </div>
+          </div>
+      </div>
+
+      <hr>
+      <div class="row my-5">
+        <div class="col-md-7 order-md-0">
+          <h2>飲食文化</h2>
+          <p>韓國料理中多以米食為主食，另有麵食、蕎麥、菜、肉等，除了炊煮熟食的飯之外，另外常伴隨熱湯同食。而冬天，醃漬的韓國泡菜是飯桌上常見的配菜，以白菜、蘿蔔、黃瓜等各食材發酵而成，種類齊全而成為飯饌。佐料方面，多用麻油、醬油、鹽、蒜、薑、蝦醬等，尤其普遍食用蒜。<br>烹調方面，由於受氣候影響，必須依季節而調整。冬天寒冷農作物不興，蔬菜難以生長時必須仰賴泡菜、水泡菜、醬瓜等傳統醃漬菜，這些醃漬菜通常在入冬前佐以鹽巴、辣椒等塗抹再放在大甕中存放，現代後有些醃漬品改用玻璃罐擺在屋內。</p>
+        </div>
+        <div class="col-md-5">
+          <img src="images/index/hyunda_1280-ok.webp" alt="韓國東大門廣場" class="img-fluid mxauto" aria-label="韓國東大門廣場">
+        </div>
+      </div>
+      <hr>
+      <div class="row my-5">
+        <div class="col-md-7 order-md-2">
+          <h2>餐桌禮儀</h2>
+          <p>1775年朝鮮學者李德懋所寫的《士小節》就記錄有各種餐桌禮儀，比如餐桌上忌諱談論不潔的事物；吃飯時忌諱吃的太慢或太快，以免讓人感覺不是自己所願或是與他人搶食；吃飯時忌諱將筷子重重摔在桌上，或用勺子磕碰盤子發出聲響；勿把湯匙和筷子同時抓在手裡；不要把匙和筷子搭放在碗上，應放在桌緣等。<br>與中國、日本和越南的餐桌禮儀不同，盛米飯和湯的碗是不應該拿起的。這種韓民族特色的金屬碗，圓底帶蓋的「坐」在桌子上，底下沒有供你手握的把，加上米飯傳導給碗的熱與其重量，不碰是合情合理的。<br>韓國人喜愛使用金屬作的長柄匙來吃飯與喝湯，一方面過往貴族都使用銀製餐具，另一方面是在韓國因為不使用即棄餐具，所到之處都使用這類方便易洗的不鏽鋼。韓式的筷子是扁平的金屬箸，只用來夾菜。
+          </p>
+        </div>
+        <div class="col-md-5">
+          <img src="images/index/namdaemun-market_1280-ok.webp" alt="韓國市場美食" class="img-fluid mxauto" aria-label="韓國市場美食">
+        </div>
+      </div>
+      <hr>
+      <div class="row my-5">
+        <div class="col-md-7">
+          <h2>宮廷料理</h2>
+          <p>韓國宮廷料理由歷經嚴格訓練的宮女(廚房尚宮)與男性專業廚師(熟手)全權負責，除了王室膳食之外，他們亦負責製作各種宴會料理與祭祀料理等宮廷裡所需的各種飲食。熟手的烹飪技術多以世襲方式傳授，到了日據時代(1910~1945年)，失去宮中職位的熟手開始在民間的飯館工作，自然而然地讓百姓們接觸到了宮廷的飲食文化。<br>韓國自1971年起，指定「朝鮮王朝宮廷料理」烹飪技能為重要無形文化財。<br>主要宮廷料理:<ul style="list-style-type:disc;font-size: 0.9rem;"><li>九折坂:使用分成九格的容器，周圍八格為各種料理(肉、蔬菜等)，正中間則是小麥煎餅。品嚐時，將各種料理放在小麥煎餅上包起即可，料理整體外觀優美。</li> <li>神仙爐:在桌上現煮現吃的火鍋料理，使用中空的獨特容器。中間的洞口用來放入木炭以加熱食材，各種食材則是放在周圍的鍋體中，倒入高湯煮滾後享用</li><li>蕩平菜:將以綠豆粉製成的涼粉、炒肉、燙水芹與烤海苔拌勻而成的涼拌料理，口感滑嫩、氣味清香。</li></ul></p>
+        </div>
+        <div class="col-md-5">
+          <img src="images/index/gwanghwamun_1280-ok.webp" alt="韓國光化門" class="img-fluid mxauto" aria-label="韓國光化門">
+        </div>
+      </div>
+      <hr>
+      </div>
+    <footer class="container">
+      <p class="float-end"><a href="#top">回到頁面頂端</a></p>
+      <p>FoodTracker &copy;2023 </p>
+    </footer>
+    </main>
+    <!-- BootstrapJS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>

@@ -1,0 +1,264 @@
+<!-- 宣告html5文件 -->
+<!doctype html>
+<!-- 根元素 -->
+<html lang="zh-Hant-TW">
+  <head>
+    <!-- 中繼標籤 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="FoodTracker"> 
+    <meta name="description" content="韓式食譜分享"> 
+    <meta name="generator" content="Visual Studio Code v.1.83.1">
+    <meta name="keywords" content="食譜,韓式,泡菜炒飯,炒雜菜,部隊鍋,馬鈴薯排骨湯,水蘿蔔泡菜,春川辣炒雞排,辣炒豬肉,白菜泡菜">  
+    <!-- favicon -->
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <!-- 網站標籤 -->
+    <title>食譜教學</title>
+    <!-- BootstrapCSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <!-- google追蹤分析 -->
+   <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-D91JKTZB1P"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-D91JKTZB1P');
+      </script>
+  </head>
+  <!-- 網頁本文 -->
+  <body>
+    <header class="fixed-top">
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container-fluid">
+          <img src="logo.png" alt="FoodTracker logo" style="width: 40px;"> 
+          <a class="navbar-brand" href="#">FoodTracker</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">首頁</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">關於</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="recipe.html">食譜教學</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="recommend.html">餐廳推薦</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="news.html">新聞和活動</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="https://toolkit.url.com.tw/bbs/index.php?email=bbs@trial-153950.url.tw">留言區</a>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-dark" type="submit">搜!</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div id="carouselExampleIndicators" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="images/index/side-dish_1920-ok.webp" class="d-block w-100" alt="韓國泡菜" title="韓國泡菜" aria-label="韓國泡菜">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/koreanfood_1920-ok.webp" class="d-block w-100" alt="韓式餐桌" title="韓國泡菜" aria-label="韓國泡菜">
+          </div>
+          <div class="carousel-item">
+            <img src="images/index/market_1920-ok.webp" class="d-block w-100" alt="韓國傳統市場" title="韓國傳統市場" aria-label="韓國傳統市場">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      <div class="container">
+        <!-- role屬性可變更h2標籤語意，若不需要變更 可以刪除 -->
+        <h2 class="alert alert-success mt-5" role="alert">澱粉主食食譜</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card">
+                    <img src="images/recipe/japchae_1280.webp" class="card-img-top" alt="韓式雜菜" title="韓式雜菜" aria-label="韓式雜菜">
+                    <div class="card-body">
+                        <h4><i class="material-icons" style="font-size: 1.7rem; vertical-align:bottom;">label</i>韓式雜菜</h4>
+                        <p class="card-text">食材:<br>韓國冬粉 100克、紅蘿蔔絲 半條、紅椒絲 半顆、黃椒絲 半顆、洋蔥絲 半顆、香菇絲 3朵、杏鮑菇絲 1條、黑木耳絲2片、菠菜1把、蒜碎3~5顆、青蔥2根<br>調味:<br>薄鹽醬油 3大匙、糖 1大匙、芝麻香油 1大匙、白芝麻 1大匙、鹽 適量</p>
+                        <p class="card-text">作法:<ol>
+                          <li>冬粉入滾水鍋煮8～10分鐘，撈起瀝乾後趁熱拌入醬油、糖和香油，用剪刀剪成小段，放涼備用。</li>
+                          <li>菠菜洗後不切，入滾水汆燙，撈起泡冰水冷卻後，擠乾水分切段備用</li>
+                          <li>熱鍋，下少許香油，先炒香菇絲、杏鮑菇絲，再下胡蘿蔔、黑木耳、紅椒絲、黃椒絲、洋蔥絲炒軟，加入鹽、糖、青蔥段、蒜碎，炒香後盛起，直接拌入冬粉鍋裡。</li>
+                          <li>將冬粉、菠菜、炒蔬菜拌勻混合，加入白芝麻混合,完成!</li>
+                        </ol></p>
+                        <p class="text-end"><a href="https://zh.wikipedia.org/zh-tw/%E9%9B%9C%E8%8F%9C_(%E6%9C%9D%E9%AE%AE)" class="btn btn-outline-success" target="_blank" role="button">韓式雜菜</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card">
+                    <img src="images/recipe/kimchi-fried-rice-241051_1280.webp" class="card-img-top" alt="韓式泡菜炒飯" title="韓式泡菜炒飯" aria-label="韓式泡菜炒飯">
+                    <div class="card-body">
+                        <h4><i class="material-icons" style="font-size: 1.7rem; vertical-align:bottom;">label</i>韓式泡菜炒飯</h4>
+                        <p class="card-text">食材:<br>韓式泡菜250g、白飯2碗、豬五花肉片3片、雞蛋1顆、白芝麻 適量、蒜頭1大匙、醬油 少許、食用油 適量、鹽巴 適量、香油 適量</p>
+                        <p class="card-text">作法:<ol>
+                          <li>泡菜切丁、豬五花肉片切絲 備用</li>
+                          <li>熱鍋下油放五花肉片炒香後加入泡菜、醬油、蒜頭，食材熟後起鍋備用</li>
+                          <li>熱鍋下油，放雞蛋跟白飯，將飯平均炒開後放入蒜末、蔥花、泡菜豬五花肉</li>
+                          <li>加入醬油、鹽巴、白胡椒、香油、白芝麻調味，起鍋盛盤，完成！</li>
+                        </ol></p>
+                        <p class="text-end"><a href="https://zh.wikipedia.org/wiki/%E6%B3%A1%E8%8F%9C%E7%82%92%E9%A3%AF" class="btn btn-outline-success" target="_blank" role="button">韓式泡菜炒飯</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="alert alert-success mt-5" role="alert">鍋物食譜</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card">
+                    <img src="images/recipe/food-836806_1280.webp" class="card-img-top" alt="馬鈴薯排骨湯" title="馬鈴薯排骨湯" aria-label="馬鈴薯排骨湯">
+                    <div class="card-body">
+                        <h4><i class="material-icons" style="font-size: 1.7rem; vertical-align:bottom;">label</i>馬鈴薯排骨湯</h4>
+                        <p class="card-text">食材:<br>湯底-豬背骨1.5kg、蒜頭20g、薑片20g、蔥30g、馬鈴薯600g<br>醃白菜-大白菜300g、韓式大醬15g、韓式辣椒醬20g、韓式辣椒粉45g、魚露40g、味醂90g、醬油100g、鰹魚粉 適量、韓國芝麻葉 適量、紫蘇籽粉 適量</p>
+                        <p class="card-text">作法:<ol>
+                          <li>將豬背骨川燙至表面變色,並將雜質用水清洗乾淨</li>
+                          <li>將蒜頭、薑片、蔥、豬背骨及馬鈴薯放入鍋中,中小火燉煮40~50分鐘</li>
+                          <li>燉煮過程中，將煮熟的馬鈴薯撈出備用</li>
+                          <li>白菜切對半川燙至半生熟</li>
+                          <li>將醃白菜的醬料與白菜拌在一起</li>
+                          <li>湯底燉煮至乳白色後，將蔥與薑片撈出</li>
+                          <li>讓湯底與食材的量盡量保持1:1</li>
+                          <li>將馬鈴薯、醃白菜與8成醬料加入鍋中燉煮15~20分鐘,剩餘醬料依個人口味調整</li>
+                          <li>燉煮成型盛出,完成！</li>
+                        </ol></p>
+                        <p class="text-end"><a href="https://en.wikipedia.org/wiki/Gamja-tang" class="btn btn-outline-success" target="_blank" role="button">馬鈴薯排骨湯</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card">
+                    <img src="images/recipe/korean-food-6211497_1280.webp" class="card-img-top" alt="部隊鍋" title="部隊鍋" aria-label="部隊鍋">
+                    <div class="card-body">
+                        <h4><i class="material-icons" style="font-size: 1.7rem; vertical-align:bottom;">label</i>部隊鍋</h4>
+                        <p class="card-text">食材:<br>午餐肉(切片)120g、德式香腸(切段)70g、嫩豆腐(切片)100g、青蔥(切段)適量、金針菇30g、雪白菇30g、韓式年糕40g、焗豆(茄汁)3湯匙、韓式泡菜50g、韓式泡麵50g、切達起司片1片<br>調味：<br>韓式辣椒醬1湯匙、醬油1湯匙、韓式辣椒粉1茶匙、白砂糖1/2茶匙、常溫水150ml、熱水200ml</p>
+                        <p class="card-text">作法:<ol>
+                          <li>於鍋中倒入常溫水、醬油及韓式辣椒醬，以小火拌勻後，放入韓式辣椒粉及白砂糖拌勻。</li>
+                          <li>除韓式泡麵及切達起司片，將其餘食材全部放入鍋中，倒入熱水，以中火煮至沸騰後，煮10分鐘。</li>
+                          <li>將韓式泡麵放入鍋中，中火煮至軟化後，將起司片放置泡麵上方，並加熱至融化，完成！</li>
+                        </p>
+                        <p class="text-end"><a href="https://zh.wikipedia.org/zh-tw/%E9%83%A8%E9%9A%8A%E9%8D%8B" class="btn btn-outline-success" target="_blank" role="button">部隊鍋</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="alert alert-success mt-5" role="alert">肉類食譜</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card">
+                    <img src="images/recipe/pork-1582916_1280.webp" class="card-img-top" alt="辣炒豬肉" title="辣炒豬肉" aria-label="辣炒豬肉">
+                    <div class="card-body">
+                        <h4><i class="material-icons" style="font-size: 1.7rem; vertical-align:bottom;">label</i>辣炒豬肉</h4>
+                        <p class="card-text">食材:<br>豬肉片600克(五花肉或梅花肉皆可)、洋蔥泥50g、蒜泥20g、醬油40g、蘋果泥20g、細辣椒粉20g、韓國辣椒醬3大匙、芝麻油1/2大匙、玉米糖漿20g、黑胡椒粉 適量、洋蔥1個、蔥2根、白芝麻 適量、食用油 適量</p>
+                        <p class="card-text">作法:<ol>
+                          <li>將豬肉片，加入洋蔥泥、蒜泥、醬油、蘋果泥、辣椒粉、韓國辣椒醬、玉米糖漿、芝麻油、黑胡椒粉拌勻醃製30分鐘以上。</li>
+                          <li>洋蔥切片，蔥切1-2公分長段，備用。</li>
+                          <li>取一平鍋，先中火預熱2分鐘，然後加入適量食用油，加入醃好的豬肉片翻炒至肉片變色。</li>
+                          <li>最後加入洋蔥片和蔥段翻炒至熟，灑上白芝麻，完成！</li>
+                        </ol></p>
+                        <p class="text-end"><a href="https://zh.wikipedia.org/zh-tw/%E9%9F%93%E5%9C%8B%E6%96%99%E7%90%86" class="btn btn-outline-success" target="_blank" role="button">辣炒豬肉</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card">
+                    <img src="images/recipe/chicken-1280.webp" class="card-img-top" alt="春川辣炒雞排" title="春川辣炒雞排" aria-label="春川辣炒雞排">
+                    <div class="card-body">
+                        <h4><i class="material-icons" style="font-size: 1.7rem; vertical-align:bottom;">label</i>春川辣炒雞排</h4>
+                        <p class="card-text">食材:<br>雞腿肉400g、高麗菜 半顆、洋蔥1個、馬鈴薯1個、青蔥1根、大蒜3~4瓣<br>醬料:<br>薄鹽醬油2匙、辣椒醬4匙、辣椒粉2匙、蒜末1.5匙、料酒2匙、砂糖1匙、果糖1匙、生薑末0.5匙、黑胡椒粉 適量</p>
+                        <p class="card-text">作法:<ol>
+                          <li>調製醃製醬料，將以上調味材料混合攪拌</li>
+                          <li>雞腿肉放入醬料約3大匙，塗抹均勻醃製15分鐘左右，剩餘醬料備用</li>
+                          <li>將高麗菜切小塊，馬鈴薯切條狀</li>
+                          <li>青蔥切約2-3公分長段，洋蔥切約1-2公分寬度的長段</li>
+                          <li>準備一個平底鍋，將高麗菜、洋蔥、大蔥、大蒜、馬鈴薯依序放入鍋裡，最上面放上醃好的雞腿肉，淋上剩餘的醬料，開火準備翻炒。</li>
+                          <li>逐漸翻炒的過程中，蔬菜會開始生水，持續翻炒直到蔬菜變軟、馬鈴薯熟透。</li>
+                          <li>雞腿肉8分熟時，用剪刀將雞腿肉剪成合適吃的大小，持續翻炒</li>
+                          <li>所有材料與醬料充分翻炒入味，炒至馬鈴薯都熟透後，裝盤，完成！</li>
+                        </ol></p>
+                        <p class="text-end"><a href="https://zh.wikipedia.org/zh-tw/%E6%98%A5%E5%B7%9D%E5%B8%82" class="btn btn-outline-success" target="_blank" role="button">春川辣炒雞排</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h2 class="alert alert-success mt-5" role="alert">小菜食譜</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="card">
+                    <img src="images/recipe/kimchi-7613311_1280.webp" class="card-img-top" alt="水蘿蔔泡菜" title="水蘿蔔泡菜" aria-label="水蘿蔔泡菜">
+                    <div class="card-body">
+                        <h4><i class="material-icons" style="font-size: 1.7rem; vertical-align:bottom;">label</i>水蘿蔔泡菜</h4>
+                        <p class="card-text">食材:<br>白蘿蔔1條<br>調料:<br>鹽1大匙(醃製)、水150g、冰糖150g、白醋180g</p>
+                        <p class="card-text">作法:<ol>
+                          <li>水、糖、白醋量好重量，倒入小鍋攪拌均勻並煮沸，待冰糖溶化即可，熄火放涼備用</li>
+                          <li>白蘿蔔切成小正方粒放入鍋中，撒上1大匙鹽抓均勻，醃製1小時以上</li>
+                          <li>雙手擠乾蘿蔔的苦水</li>
+                          <li>用冰開水抓洗一遍白蘿蔔粒，並瀝乾水份</li>
+                          <li>白蘿蔔裝入容器裏，倒入放涼的甜醋水，放入冰箱冷藏一天，完成！</li>
+                        </ol></p>
+                        <p class="text-end"><a href="https://zh.wikipedia.org/zh-tw/%E9%9B%9C%E8%8F%9C_(%E6%9C%9D%E9%AE%AE)" class="btn btn-outline-success" target="_blank" role="button">水蘿蔔泡菜</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="card">
+                    <img src="images/recipe/korean-spicy-cabbage-1120406_1280.webp" class="card-img-top" alt="白菜泡菜" title="白菜泡菜" aria-label="白菜泡菜">
+                    <div class="card-body">
+                        <h4><i class="material-icons" style="font-size: 1.7rem; vertical-align:bottom;">label</i>白菜泡菜</h4>
+                        <p class="card-text">食材:<br>1個大白菜、1杯食用鹽、4杯水、3-4 瓣大蒜，切碎、1塊生薑，切碎、2-3個洋蔥，切段、2湯匙韓國辣椒粉、1湯匙糖、1湯匙魚露(或鹽)</p>
+                        <p class="card-text">作法:<ol>
+                          <li>將白菜切成兩半，然後再將每半切成四塊，形成8個大塊。</li>
+                          <li>在白菜的每一層葉子間均勻灑上食用鹽。確保每片葉子都有鹽。</li>
+                          <li>將鹽灑在白菜上後，讓它們靜置約2小時。這將有助於白菜釋放水分。</li>
+                          <li>在浸泡完2小時後，用清水仔細沖洗白菜，去除多餘的鹽。</li>
+                          <li>在碗中混合切碎的大蒜、生薑、糖、魚露（或鹽）、辣椒粉，並攪拌均勻。</li>
+                          <li>將洋蔥切成適當大小，然後與製作好的辣椒醬混合在一起。</li>
+                          <li>用辣椒醬均勻地塗抹在每個白菜葉子之間。</li>
+                          <li>把調味好的白菜放在一個密封的容器中，並在室溫下發酵2至3天。</li>
+                          <li>發酵完成後，完成！ tips:將泡菜冷藏可以保存數周至數月。</li>
+                        </ol></p>
+                        <p class="text-end"><a href="https://zh.wikipedia.org/wiki/%E6%B3%A1%E8%8F%9C%E7%82%92%E9%A3%AF" class="btn btn-outline-success" target="_blank" role="button">白菜泡菜</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+      </div>
+    <footer class="container">
+      <p class="float-end"><a href="#top">回到頁面頂端</a></p>
+      <p>FoodTracker &copy;2023 </p>
+    </footer>
+    </main>
+    <!-- BootstrapJS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </body>
+</html>
